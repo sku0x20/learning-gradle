@@ -1,0 +1,54 @@
+so guys today we are going to implement a java like plugin in gradle.
+it wont be as much sophesticated as java plugin from the gradle itself. but it would be good enough.
+
+so, we have some multiple things to keep in mind before proceding, 
+- how we are going to proceed,
+- what features does this support
+
+# features first
+- it should support dependencies, putting things on diffrent classpath, in java plugin called configurations
+- it should support different source sets
+
+# steps
+- it's simple first make the package compile and run
+- introduce the concept of souresets
+- introduce dependencies and classpath
+
+# impl
+- first i would make simple tasks within build script
+- then, i will create custom task types which does that for me in same file
+- then, extract them to buildSrc file
+- then, introduce the concept of plugin
+- also, in the meantime i will try to see if i need to refactor those task type into different classes
+    of their own, so it ease me with testing...
+
+
+# notes
+if i understand correctly there are two things, one is tasks which one can register with tasks container,
+another is the type of the tasks.
+we can create and register multiple tasks of same task type.
+also, when a task is of some task type it can take like different paraments and act accordingly.
+now, i understand when gradle said, you just configure the tasks, what they does are defined by the plugin.
+i get it.
+task type is like the class, the blueprint,
+and task is the runtime object or just object, the instance of that class...
+
+
+
+# old notes, first try...
+
+tbh right now, i don't even know how to proceed...
+
+
+FROM STICKY NOTE,
+// now it's better to not. lol... still idk...
+so, what i am thinking right now, is kind of like replicating that thing by myself,
+like defining those tasks by myself, and like compiling and building and depends everything...
+and then if possible, creating a plugin or something...
+that would be so much helpful in understanding gradle build system
+
+
+https://stackoverflow.com/questions/8027670/compiling-four-java-files-within-one-package-using-javac
+
+https://github.com/etiennestuder/gradle-credentials-plugin
+
