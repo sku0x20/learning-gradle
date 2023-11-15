@@ -1,4 +1,4 @@
-so guys today we are going to implement a java like plugin in gradle.
+implement a java like plugin in gradle.
 it wont be as much sophesticated as java plugin from the gradle itself. but it would be good enough.
 
 so, we have some multiple things to keep in mind before proceding, 
